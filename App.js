@@ -1,29 +1,41 @@
-import React, {useState} from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
+import React from 'react';
+import {Text, View, Button, TextInput} from 'react-native';
 
 const App = () => {
-  const [outputText, setOutPutText] = useState(
-    'Open up the biggest app with react-native',
-  );
   return (
-    <View style={styles.container}>
-      <Text>{outputText}</Text>
-      <Button
-        title="Change text"
-        onPress={() => setOutPutText('This is the changes text so far')}>
-        Change the text
-      </Button>
+    <View style={{padding: 50, flexDirection: 'row'}}>
+      <View
+        style={{
+          backgroundColor: 'red',
+          width: 100,
+          height: 100,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text>1</Text>
+      </View>
+      <View
+        style={{
+          backgroundColor: 'green',
+          width: 100,
+          height: 100,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text>2</Text>
+      </View>
+      <View
+        style={{
+          backgroundColor: 'yellow',
+          width: 100,
+          height: 100,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        <Text>3</Text>
+      </View>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
