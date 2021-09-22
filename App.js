@@ -18,7 +18,7 @@ const App = () => {
 
   const addGoalHandler = () => {
     setCourseGoals(currentGoals => [...currentGoals, enterGoal]);
-    setEnterGoal('');
+    // setEnterGoal('');
   };
 
   return (
